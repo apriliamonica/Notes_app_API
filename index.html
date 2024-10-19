@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Notes App</title>
+  </head>
+  <body>
+    <header>
+      <header-bar></header-bar>
+    </header>
+    <main>
+      <div class="container">
+        <section class="addNotes" id="form">
+          <h2>Create Notes</h2>
+          <notes-form></notes-form>
+        </section>
+        <section class="myNotes" id="note">
+          <h2>My Notes</h2>
+          <div id="container-item">
+            <button id="allnotes" class="active">All Notes</button>
+            <button id="archived">Archived</button>
+            <div id="loading" class="loading...">Loading</div>
+            <notes-list maxheight="30"></notes-list>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <footer-bar></footer-bar>
+    </footer>
+  </body>
+</html>
